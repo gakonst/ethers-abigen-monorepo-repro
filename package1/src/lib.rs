@@ -1,5 +1,5 @@
-use ethers::contract::abigen;
-// use ethers_contract::abigen;
+// use ethers::contract::abigen;
+use ethers_contract::abigen;
 
 abigen!(
     TestContract,

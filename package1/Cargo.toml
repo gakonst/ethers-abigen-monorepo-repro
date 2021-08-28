@@ -7,7 +7,9 @@ edition = "2018"
 
 [dependencies]
 cfg-if = "1.0.0"
-ethers = { path = "../../ethers-rs", features = ["abigen"] }
-# ethers-contract = { path = "../../ethers-rs/ethers-contract", features = ["abigen"] }
-# ethers-core = { path = "../../ethers-rs/ethers-core" }
-# ethers-providers = { path = "../../ethers-rs/ethers-providers" }
+# ethers = { git = "https://github.com/gakonst/ethers-rs", features = ["abigen"] }
+ethers-contract = { git = "https://github.com/gakonst/ethers-rs", features = ["abigen"] }
+# this doesn't work
+# ethers-contract = { git = "https://github.com/gakonst/ethers-rs", features = ["abigen"], rev = "72c77dd0cbacfaa790e3fe3747d5e94436dec0bd" }
+ethers-providers = { git = "https://github.com/gakonst/ethers-rs" }
+ethers-core = { git = "https://github.com/gakonst/ethers-rs" }
