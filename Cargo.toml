@@ -1,0 +1,12 @@
+[package]
+name = "test-ethers"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# ethers = { path = "../ethers-rs", features = ["abigen"] }
+ethers-contract = { path = "../ethers-rs/ethers-contract", features = ["abigen"] }
+ethers-core = { path = "../ethers-rs/ethers-core" }
+ethers-providers = { path = "../ethers-rs/ethers-providers" }
